@@ -15,7 +15,7 @@ function CategoryGridTile({title,color}) {
             </View>
         </Pressable>
     </View>
-    //
+    
     
   );
 }
