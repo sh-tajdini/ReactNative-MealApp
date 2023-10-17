@@ -19,7 +19,7 @@ function CategoryGridTile({title,color}) {
     
   );
 }
-//
+
 export default CategoryGridTile;
 
 const styles = StyleSheet.create({
