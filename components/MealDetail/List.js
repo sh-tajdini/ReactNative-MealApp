@@ -1,12 +1,12 @@
 import {View,Text,StyleSheet} from 'react-native';
 function List({data}){
     return(
-
+        data.map((dataPoint) => (
         <View key={dataPoint} style={styles.listItem}>
-        {data.ingredients.map((dataPoint => <Text style={styles.itemText}>{dataPoint}</Text>))}
-        </View>
+            <Text style={styles.itemText}>{dataPoint}</Text>
+            </View>
+        ))
     );
-
 }
 export default List;
 
