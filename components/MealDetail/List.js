@@ -19,7 +19,6 @@ listItem:{
     marginHorizontal:12,
     backgroundColor:'#e2b497',
 },
-
 itemText:{
    color:'#351401',
    textAlign:'center',
