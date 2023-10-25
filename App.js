@@ -9,7 +9,10 @@ import MealDetailScreen from './screens/MealDetailScreen';
 import FavoriteScreen from './screens/FavoritesScreen';
 import MealsOverviewScreen from './screens/MealsOverviewScreen';
 import{Ionicons} from '@expo/vector-icons';
-import FavoritesContextProvider from './store/context/favorites-context';
+// import FavoritesContextProvider from './store/context/favorites-context';
+import {Provider} from 'react-redux';
+import {store} from './store/redux/store';
+
 
 
 
@@ -60,7 +63,8 @@ export default function App() {
   return (
     <>
     <StatusBar style='light'/>
-    <FavoritesContextProvider>
+    {/* <FavoritesContextProvider> */}
+    <Provider store={store}>
     <NavigationContainer>
       <Stack.Navigator 
       screenOptions={{
@@ -96,7 +100,8 @@ export default function App() {
         />
       </Stack.Navigator>
     </NavigationContainer>
-    </FavoritesContextProvider>
+    {/* </FavoritesContextProvider> */}  
+    </Provider>
    
     </>
   );
