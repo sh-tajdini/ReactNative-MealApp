@@ -7,7 +7,7 @@ import List from '../components/MealDetail/List';
 import IconButton from '../components/IconButton';
 import { addFavorite, removeFavorite } from '../store/redux/favorites';
 import { useDispatch,useSelector } from 'react-redux';
-// import { FavoritesContext } from '../store/context/favorites-context';
+
 
 function MealDetailScreen({route,navigation}) {
     //  const favoriteMealsCtx = useContext(FavoritesContext);
