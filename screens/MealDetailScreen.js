@@ -58,7 +58,6 @@ function MealDetailScreen({route,navigation}) {
              <List data={selectedMeal.steps}/>
            </View>
            </View>
-      
         </ScrollView>
     );
 
