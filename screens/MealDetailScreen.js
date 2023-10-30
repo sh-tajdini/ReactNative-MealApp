@@ -40,7 +40,6 @@ function MealDetailScreen({route,navigation}) {
            }
         });
     }, [navigation,changeFavoriteStatusHandler]);
-    
     return (
         <ScrollView style={styles.rootContainer}>
             <Image style ={styles.image} source={{uri: selectedMeal.imageUrl}}/>
