@@ -10,7 +10,7 @@ import { useDispatch,useSelector } from 'react-redux';
 // import { FavoritesContext } from '../store/context/favorites-context';
 
 function MealDetailScreen({route,navigation}) {
-    // improve code
+    
     //  const favoriteMealsCtx = useContext(FavoritesContext);
     const favoriteMealIds = useSelector((state) => state.favoriteMeals.ids);
     const dispatch = useDispatch();
